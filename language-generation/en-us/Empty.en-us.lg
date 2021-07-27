@@ -1,0 +1,17 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Welcome to your bot.
+
+# SendActivity_f89wVD()
+[Activity
+    Text = ${SendActivity_f89wVD_text()}
+]
+
+# SendActivity_f89wVD_text()
+- Sorry, I didn't get that.

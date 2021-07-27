@@ -1,0 +1,14 @@
+{
+  "name": "Empty",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node index.js"
+  },
+  "dependencies": {
+    "@standardlabs/javascript-code-action": "^0.0.0-rc2",
+    "botbuilder-ai-luis": "4.14.1-preview",
+    "botbuilder-ai-qna": "4.14.1-preview",
+    "botbuilder-dialogs-adaptive-runtime-integration-express": "4.14.1-preview",
+    "cross-env": "latest"
+  }
+}

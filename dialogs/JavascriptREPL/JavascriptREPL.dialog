@@ -1,0 +1,57 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "pB5U87",
+    "name": "JavascriptREPL",
+    "comment": "A Javascript REPL"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "0ruR1F"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "uUObO7"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_uUObO7()}",
+          "property": "turn.script"
+        },
+        {
+          "$kind": "JavaScriptCodeAction",
+          "$designer": {
+            "id": "1AXiFH"
+          },
+          "resultProperty": "turn.result",
+          "script": "=turn.script"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "UTIQwI"
+          },
+          "activity": "${SendActivity_UTIQwI()}"
+        }
+      ]
+    }
+  ],
+  "generator": "JavascriptREPL.lg",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": []
+  },
+  "id": "JavascriptREPL"
+}

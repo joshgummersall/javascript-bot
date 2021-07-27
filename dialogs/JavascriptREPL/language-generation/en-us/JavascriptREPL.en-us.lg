@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# TextInput_Prompt_uUObO7()
+[Activity
+    Text = ${TextInput_Prompt_uUObO7_text()}
+]
+
+# TextInput_Prompt_uUObO7_text()
+- Gimme some Javascripts
+# SendActivity_UTIQwI()
+[Activity
+    Text = ${SendActivity_UTIQwI_text()}
+]
+
+# SendActivity_UTIQwI_text()
+- "${turn.result}"
